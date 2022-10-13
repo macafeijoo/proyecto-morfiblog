@@ -1,4 +1,4 @@
-.body {
+body {
     background: linear-gradient(to right, #DFE6E8, #BBC8CD ); 
 }
 menu .nav {
@@ -17,8 +17,9 @@ menu .nav {
 .navegador .logo {
     float: left;
 }
-
 .slide img {
     height: 600px;
     width: 800px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #292929, #2929291c );
 }
