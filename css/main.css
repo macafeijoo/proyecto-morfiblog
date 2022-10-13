@@ -5,17 +5,23 @@ menu .nav {
     display: flex;
     flex-direction: row;
 }
+menu .logo .nav {
+    font-weight: 700;
+    text-align: right;
+}
 .navegador {
     color: #2C2B2B;
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
     font-size: 24px;
     text-decoration: none;
     padding: 26px;
-    display: inline-block;
+    display: inline;
 }
 .navegador .logo {
     float: left;
+}
+.navegador .texto {
+    text-align: left;
 }
 .slide img {
     height: 600px;
@@ -23,3 +29,11 @@ menu .nav {
     border-radius: 20px;
     background-image: linear-gradient(to top, #292929, #2929291c );
 }
+.row {
+    padding: 26 px;
+    font-weight: 300;
+}
+.resenas img {
+    align-items: flex-start;
+}
+
