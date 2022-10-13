@@ -1,11 +1,8 @@
 body {
     background: linear-gradient(to right, #DFE6E8, #BBC8CD ); 
 }
-menu .nav {
-    display: flex;
-    flex-direction: row;
-}
-menu .logo .nav {
+
+.menu .logo .nav {
     font-weight: 700;
     text-align: right;
 }
@@ -15,13 +12,11 @@ menu .logo .nav {
     font-size: 24px;
     text-decoration: none;
     padding: 26px;
-    display: inline;
+    display: inline-block;
 }
-.navegador .logo {
-    float: left;
-}
-.navegador .texto {
-    text-align: left;
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 .slide img {
     height: 600px;
@@ -35,5 +30,11 @@ menu .logo .nav {
 }
 .resenas img {
     align-items: flex-start;
+}
+.navegador .texto {
+    float: right; 
+}
+.navegador img {
+    float: left;
 }
 
