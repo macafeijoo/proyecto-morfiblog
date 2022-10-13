@@ -1,23 +1,36 @@
 body {
     background: linear-gradient(to right, #DFE6E8, #BBC8CD ); 
 }
-
-.menu .logo .nav {
-    font-weight: 700;
-    text-align: right;
+ /* header */
+.menu {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+.menu ul li a, .menu .logo {
+    text-decoration: none;
 }
 .navegador {
     color: #2C2B2B;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Antonio', sans-serif;
     font-size: 24px;
-    text-decoration: none;
-    padding: 26px;
-    display: inline-block;
+    padding: 18px;
+    font-weight: 700;
 }
-nav {
-    display: flex;
-    justify-content: space-between;
+/* titulos */
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 48px;
 }
+
+/* carrousel */
 .slide img {
     height: 600px;
     width: 800px;
@@ -31,10 +44,14 @@ nav {
 .resenas img {
     align-items: flex-start;
 }
-.navegador .texto {
-    float: right; 
-}
-.navegador img {
-    float: left;
+/* buscador */
+.form-control {
+width: 1000px;
 }
 
+/* mapa */
+iframe {
+    border-radius: 20px;
+    display: block;
+    padding-bottom: 30px;
+}
