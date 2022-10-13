@@ -60,7 +60,10 @@ h5 {
     text-align: justify;
     font-size: 14px;
 }
-
+.slogan {
+    padding-left: 100px;
+    padding-right: 100px;
+}
 /* carrousel */
 .slide img {
     height: 600px;
