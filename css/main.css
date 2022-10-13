@@ -47,11 +47,23 @@ h2 {
 /* buscador */
 .form-control {
 width: 1000px;
+padding: 15px;
 }
 
 /* mapa */
 iframe {
     border-radius: 20px;
     display: block;
+    padding-bottom: 30px;
+}
+
+/* formulario */
+
+.mb-3 input, .mb-3 textarea {
+    width: 500px;
+}
+.imagenformulario img {
+    border-radius: 20px;
+    float: right;
     padding-bottom: 30px;
 }
