@@ -121,11 +121,11 @@ iframe {
     float: right;
     padding-bottom: 10px;
 }
-/* imagenes */
-
-.container-index .column {
-    float: left;
-    width: 33.33%;
+/* index */
+.grid-index {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
 }
 .container-index img {
     border-radius: 20px;
