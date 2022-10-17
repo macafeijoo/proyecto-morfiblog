@@ -11,6 +11,7 @@ body {
 }
 .menu ul li {
     list-style: none;
+    padding: 0%;
     display: inline-block;
 }
 .menu ul li a, .menu .logo {
@@ -22,6 +23,15 @@ body {
     padding: 18px;
     font-weight: 700;
     color: #2C2B2B;
+}
+
+/* main */
+main {
+    display: grid;
+    grid-template-areas: 
+    "Inicio"
+    "Slogan"
+    "container-index";
 }
 /* colores */
 .colorprimary {
@@ -61,9 +71,13 @@ h5 {
     text-align: justify;
     font-size: 14px;
 }
+.inicio {
+    grid-area: Inicio;
+}
 .slogan {
     padding-left: 100px;
     padding-right: 100px;
+    grid-area: Slogan;
 }
 .titulo {
 padding-top: 20px;
@@ -110,6 +124,8 @@ iframe {
     border-radius: 20px;
     display: block;
     padding-bottom: 30px;
+    width: 1115px;
+    height: 600px;
 }
 
 /* formulario */
@@ -133,6 +149,7 @@ iframe {
 }
 .container-index img {
     border-radius: 20px;
+    grid-area: container-index;
 }
 
 /* transformaciones */
@@ -159,5 +176,34 @@ flex-direction: column;
 }
 .menu ul li {
     display: block;
+}
+.slogan {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.slide img {
+    height: 300px;
+    width: 400px;
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto;
+}
+.resena {
+    display: grid;
+    grid-template-columns: auto;
+}
+.form-control {
+    width: auto;
+    padding: 5px;
+    }
+iframe {
+    width: 400px;
+    height: 600px;
+}
+.grid-index {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
 }
 }
