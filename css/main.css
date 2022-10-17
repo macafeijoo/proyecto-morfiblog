@@ -64,19 +64,32 @@ h5 {
     padding-left: 100px;
     padding-right: 100px;
 }
-/* carrousel */
+.titulo {
+padding-top: 20px;
+display: flex;
+text-align: left;
+}
+/* carrousel y cocina */
 .slide img {
     height: 600px;
     width: 800px;
     border-radius: 20px;
     background-image: linear-gradient(to top, #292929, #2929291c );
 }
-.row {
-    padding: 26 px;
-    font-weight: 300;
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto;
 }
-.resenas img {
-    align-items: flex-start;
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.resena {
+    text-align: justify;
+    align-content: space-between;
+    padding: 20px;
+    justify-content: stretch;
 }
 /* buscador */
 .form-control {
