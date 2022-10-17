@@ -5,6 +5,7 @@ body {
 .menu {
     margin: auto;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -126,22 +127,37 @@ iframe {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around;
+    animation-name: entrada-lateral;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 .container-index img {
     border-radius: 20px;
 }
 
 /* transformaciones */
-.index-01:hover {
+.index-01:hover, .index-02:hover, .index-03:hover {
     transform: scale(2);
 }
-.index-02:hover {
-    transform: scale(2);
-    }
-.index-03:hover {
-    transform: scale(2);
-    }
-
 .navegador:hover {
   color: #56070C;
-}    
+} 
+
+@keyframes entrada-lateral {
+0% {
+    transform: translateX(-200px);
+}
+100% {
+    transform: translateX(0px) ;
+}
+}  
+
+/* estilo mobile */
+@media screen and (max-width: 768px) {
+.menu {
+flex-direction: column;
+}
+.menu ul li {
+    display: block;
+}
+}
