@@ -206,4 +206,7 @@ iframe {
     grid-template-columns: auto;
     justify-content: space-around;
 }
+.mb-3 input, .mb-3 textarea {
+    width: 400px;
+}
 }
