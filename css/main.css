@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(to right, #DFE6E8, #BBC8CD ); 
+    margin: auto;
 }
  /* header */
 .menu {
@@ -32,6 +33,14 @@ main {
     "Inicio"
     "Slogan"
     "container-index";
+}
+/* footer */
+footer .grid-footer {
+    display: grid;
+    grid-template-columns: 50% auto auto auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: stretch;
 }
 /* colores */
 .colorprimary {
