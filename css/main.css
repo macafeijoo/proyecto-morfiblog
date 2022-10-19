@@ -54,28 +54,28 @@ footer .grid-footer {
 }
 
 /* titulos */
-h2 {
+h1 {
     font-family: 'Antonio', sans-serif;
     font-size: 30px;
     text-align: center;
 }
-h2 h3 {
+h1 h2 {
     font-weight: 700;
 }
-h3 h4 h5 {
+h2 h3 h4 {
     font-family: 'Roboto Condensed', sans-serif;
 }
-h3 {
+h2 {
     font-size: 18px;
     text-align: center;
 }
-h4 {
+h3 {
     font-weight: 700;
     text-align: justify;
     font-size: 16px;
     padding-top: 16px;
 }
-h5 {
+h4 {
     font-weight: 300;
     text-align: justify;
     font-size: 14px;
@@ -89,14 +89,14 @@ h5 {
     grid-area: Slogan;
 }
 .titulo {
-padding-top: 20px;
-display: flex;
-text-align: left;
+    padding-top: 20px;
+    display: flex;
+    text-align: left;
 }
 /* carrousel y cocina */
 .slide img {
     height: 600px;
-    width: 800px;
+    width: 100%;
     border-radius: 20px;
     background-image: linear-gradient(to top, #292929, #2929291c );
 }
@@ -122,30 +122,33 @@ text-align: left;
 .textodestacado {
     width: 400px;
 }
-/* buscador */
-.form-control {
-width: 1000px;
-padding: 15px;
-}
-
 /* mapa */
 iframe {
     border-radius: 20px;
     display: block;
     padding-bottom: 30px;
-    width: 1115px;
+    width: 100%;
     height: 600px;
 }
-
+.d-flex {
+    width: 100%;
+}
 /* formulario */
-
 .mb-3 input, .mb-3 textarea {
-    width: 500px;
+    width: 50%;
 }
 .imagenformulario img {
     border-radius: 20px;
     float: right;
     padding-bottom: 10px;
+}
+.btn-primary {
+    background-color: #34591B;
+}
+/* buscador */
+.form-control {
+    width: 100%;
+    padding: 15px;
 }
 /* index */
 .grid-index {
@@ -181,7 +184,7 @@ iframe {
 /* estilo mobile */
 @media screen and (max-width: 768px) {
 .menu {
-flex-direction: column;
+ flex-direction: column;
 }
 .menu ul li {
     display: block;
@@ -195,27 +198,22 @@ flex-direction: column;
     width: 400px;
 }
 .grid-layout {
-    display: grid;
-    grid-template-columns: auto;
-}
-.resena {
-    display: grid;
     grid-template-columns: auto;
 }
 .form-control {
     width: auto;
     padding: 5px;
     }
-iframe {
-    width: 400px;
-    height: 600px;
-}
 .grid-index {
-    display: grid;
     grid-template-columns: auto;
     justify-content: space-around;
 }
 .mb-3 input, .mb-3 textarea {
     width: 400px;
+}
+}
+@media screen and (max-width: 1024px) {
+.resena {
+    grid-template-columns: auto;
 }
 }
