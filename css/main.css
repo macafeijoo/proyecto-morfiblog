@@ -60,7 +60,7 @@ h1 {
     text-align: center;
     font-weight: 700;
 }
-h2 h3 h4 {
+h2 h3 h4 h5 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 h2 {
@@ -78,6 +78,10 @@ h4 {
     font-weight: 300;
     text-align: justify;
     font-size: 16px;
+}
+h5 {
+    font-weight: 700;
+    text-align: center;
 }
 .inicio {
     grid-area: Inicio;
@@ -97,7 +101,6 @@ h4 {
     height: 600px;
     width: 100%;
     border-radius: 20px;
-    background-image: linear-gradient(to top, #292929, #2929291c );
 }
 .grid-layout {
     display: grid;
