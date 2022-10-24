@@ -99,12 +99,12 @@ h4 {
     border-radius: 20px;
     background-image: linear-gradient(to top, #292929, #2929291c );
 }
-
 .grid-layout {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
 }
+/* reseñas */
 .resena {
     padding: 10px;
     display: grid;
@@ -113,8 +113,7 @@ h4 {
     align-content: space-between;
     grid-template-columns: auto auto;
 }
-/* reseñas */
-.r1 {
+.r1{
     grid-row: 1/4;
     width: 500px;
 }
@@ -144,6 +143,7 @@ iframe {
 .btn-primary {
     background-color: #34591B;
 }
+
 /* buscador */
 .form-control {
     width: 100%;
@@ -208,7 +208,7 @@ iframe {
     justify-content: space-around;
 }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px){
 .resena {
     grid-template-columns: auto;
 }
