@@ -1,1 +1,7 @@
 @import "variables";
+
+@each $redsocial, $color in $redes {
+    .redsocial-#{$redsocial} {
+        color: $color;
+    }
+}
