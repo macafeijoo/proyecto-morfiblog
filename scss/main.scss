@@ -1,7 +1,194 @@
 @import "variables";
+@import "nav";
+@import "footer";
+@import "contenido";
 
+// each
+@each $color in $lista-colores {
+    .color-#{$color} {
+        background-color: $color;
+    }
+}
+
+// generales
+
+body {
+	background: $color-fondo;
+}
+
+main {
+	display: grid;
+	grid-template-areas: "Inicio" "Slogan" "Container-index";
+}
+
+// tipografía
+
+h1 {
+	font-family: 'Antonio', sans-serif;
+	font-size: 24px;
+	text-align: center;
+	font-weight: 700;
+}
+h2 {
+	h3 {
+		h4 {
+			h5 {
+				font-family: 'Roboto Condensed', sans-serif;
+			}
+		}
+	}
+	font-size: 18px;
+	text-align: center;
+	font-weight: 300;
+}
+h3 {
+	font-weight: 700;
+	text-align: justify;
+	font-size: 16px;
+	padding-top: 16px;
+}
+h4 {
+	font-weight: 300;
+	text-align: justify;
+	font-size: 14px;
+}
+h5 {
+	font-weight: 700;
+	text-align: center;
+}
+
+.slide {
+	img {
+		height: 600px;
+		width: 100%;
+		border-radius: 20px;
+	}
+}
+.grid-layout {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto;
+}
+.resena {
+	padding: 10px;
+	display: grid;
+	justify-content: stretch;
+	text-align: justify;
+	align-content: space-between;
+	grid-template-columns: auto auto;
+}
+.r1 {
+	grid-row: 1/4;
+	width: 500px;
+}
+.textodestacado {
+	width: 400px;
+}
+iframe {
+	border-radius: 20px;
+	display: block;
+	padding-bottom: 30px;
+	width: 100%;
+	height: 600px;
+}
+.d-flex {
+	width: 100%;
+}
+.imagenformulario {
+	img {
+		border-radius: 20px;
+		padding-bottom: 10px;
+	}
+}
+.btn-primary {
+	background-color: #34591B;
+}
+.form-control {
+	width: 100%;
+	padding: 15px;
+}
+.grid-index {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: space-around;
+	animation-name: entrada-lateral;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+}
+.container-index {
+	img {
+		border-radius: 20px;
+		grid-area: Container-index;
+	}
+}
+
+// extend
+.index-01 {
+	&:hover {
+		transform: scale(2);
+	}
+}
+.index-02 {
+	@extend .index-01;
+}
+.index-03 {
+    @extend .index-01;
+}
+
+// each
 @each $redsocial, $color in $redes {
     .redsocial-#{$redsocial} {
         color: $color;
     }
+}
+
+@keyframes entrada-lateral {
+	0% {
+		transform: translateX(-200px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menu {
+		flex-direction: column;
+		ul {
+			li {
+				display: block;
+			}
+		}
+	}
+	.slogan {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.slide {
+		img {
+			height: 300px;
+			width: 400px;
+		}
+	}
+	.grid-layout {
+		grid-template-columns: auto;
+	}
+	.form-control {
+		width: auto;
+		padding: 5px;
+	}
+	.grid-index {
+		grid-template-columns: auto;
+		justify-content: space-around;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.resena {
+		grid-template-columns: auto;
+	}
+	footer {
+		.grid-footer {
+			grid-template-columns: auto auto auto auto;
+		}
+	}
 }

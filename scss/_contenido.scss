@@ -1,0 +1,13 @@
+.inicio {
+	grid-area: Inicio;
+}
+.slogan {
+	padding-left: 100px;
+	padding-right: 100px;
+	grid-area: Slogan;
+}
+.titulo {
+	padding-top: 20px;
+	display: flex;
+	text-align: left;
+}
