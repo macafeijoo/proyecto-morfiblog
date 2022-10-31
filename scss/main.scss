@@ -142,6 +142,7 @@ iframe {
     }
 }
 
+// animaciones
 @keyframes entrada-lateral {
 	0% {
 		transform: translateX(-200px);
@@ -151,6 +152,7 @@ iframe {
 	}
 }
 
+// mobile
 @media screen and (max-width: 768px) {
 	.menu {
 		flex-direction: column;
