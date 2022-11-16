@@ -93,6 +93,14 @@ h5 {
   font-weight: 700;
   text-align: center; }
 
+.titulo-principal, .index-cont {
+  border-top: 1px solid #2C2B2B;
+  border-bottom: 1px solid #2C2B2B;
+  padding: 1em 0; }
+
+.index-cont {
+  border-bottom: none; }
+
 .slide img {
   height: 600px;
   width: 100%;
@@ -132,7 +140,8 @@ iframe {
 
 .imagenformulario img {
   border-radius: 20px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  width: 100%; }
 
 .btn-primary {
   background-color: #34591B; }
@@ -163,6 +172,14 @@ iframe {
   position: relative;
   background: linear-gradient #000, #000; }
 
+.container-contacto .btn {
+  width: 100%; }
+  .container-contacto .btn h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-weight: bold; }
+
 .redsocial-linkedin {
   color: #264f72; }
 
@@ -192,7 +209,7 @@ iframe {
   .grid-layout {
     grid-template-columns: auto; }
   .form-control {
-    width: auto;
+    width: 100%;
     padding: 5px; }
   .grid-index {
     grid-template-columns: auto;

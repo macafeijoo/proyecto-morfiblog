@@ -56,6 +56,23 @@ h5 {
 	text-align: center;
 }
 
+// extend and mixing
+
+@mixin titulo-principal {
+	border-top: 1px solid #2C2B2B;
+	border-bottom: 1px solid #2C2B2B;
+	padding: 1em 0;
+}
+
+.titulo-principal {
+	@include titulo-principal;
+}
+
+.index-cont {
+	border-bottom: none;
+	@extend .titulo-principal;
+}
+
 .slide {
 	img {
 		height: 600px;
@@ -101,6 +118,7 @@ iframe {
 	img {
 		border-radius: 20px;
 		padding-bottom: 10px;
+		width: 100%;
 	}
 }
 .btn-primary {
@@ -138,6 +156,20 @@ iframe {
 		img {
 			position: relative;
 			background:linear-gradient (#000, #000);
+		}
+
+	}
+}
+
+.container-contacto {
+	.btn {
+		width: 100%;
+
+		h3 {
+			text-align: center;
+			padding: 0;
+			margin: 0;
+			font-weight: bold;
 		}
 
 	}
@@ -184,13 +216,16 @@ iframe {
 		grid-template-columns: auto;
 	}
 	.form-control {
-		width: auto;
+		width: 100%;
 		padding: 5px;
 	}
 	.grid-index {
 		grid-template-columns: auto;
 		justify-content: space-around;
 	}
+
+	
+
 }
 @media screen and (max-width: 1024px) {
 	.resena {
