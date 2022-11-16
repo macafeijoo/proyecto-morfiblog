@@ -78,10 +78,14 @@ h5 {
 }
 .r1 {
 	grid-row: 1/4;
-	width: 500px;
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
 }
 .textodestacado {
-	width: 400px;
+	width: 100%;
 }
 iframe {
 	border-radius: 20px;
@@ -118,6 +122,24 @@ iframe {
 	img {
 		border-radius: 20px;
 		grid-area: Container-index;
+	}
+}
+
+.carousel {
+	h2 {
+		color: #fff;
+		text-align: center;
+		padding: 0.5em;
+		border-radius: 5px;
+	}
+
+	.carousel-item {		
+
+		img {
+			position: relative;
+			background:linear-gradient (#000, #000);
+		}
+
 	}
 }
 
@@ -176,7 +198,7 @@ iframe {
 	}
 	footer {
 		.grid-footer {
-			grid-template-columns: auto auto auto auto;
+			grid-template-columns: 50% auto;
 		}
 	}
 }

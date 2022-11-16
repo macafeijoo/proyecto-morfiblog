@@ -1,9 +1,19 @@
 footer {
 	.grid-footer {
 		display: grid;
-		grid-template-columns: 50% auto auto auto;
+		grid-template-columns: 50% auto ;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		align-items: stretch;
 	}
+	h2 {
+		font-weight: 300;
+	}
+
+	.redes {
+		svg {
+			margin-right: 1em;
+		}
+	}
+
 }
